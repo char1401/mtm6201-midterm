@@ -48,3 +48,553 @@ table {
 }
 
 /* Costum css starts here */
+/* starting with the skip links, making them apear only when focused and outlined for keybaord users */
+a[href="#main-content"]{
+position:absolute;
+left:-999px;
+}
+
+a[href="#main-content"]:focus{
+left:1rem;
+top:1rem;
+background:#000;
+color:#fff;
+padding:0.5rem;
+}
+
+.cta-btn:focus{
+outline:3px solid #d69e3d;
+}
+
+/* Now the base styling for mobile */
+section{
+padding:3rem 1rem;
+}
+
+@media (min-width:768px){
+section{
+padding:4rem 2rem;
+}
+}
+
+@media (min-width:1100px){
+section{
+padding:5rem 2rem;
+}
+}
+
+/* Base styles */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Lato:wght@400;700&display=swap');
+
+body{
+    font-family:'Karla', sans-serif;
+    background:#f3f0e9;
+    color:#000;
+    line-height:1.6;
+}
+
+/* Typography */
+h1,h2,h3,nav a{
+    font-family:'Lato', sans-serif;
+}
+
+h1{
+    font-size:2.027rem;
+}
+
+h2{
+    font-size:1.802rem;
+}
+
+h3{
+    font-size:1.424rem;
+}
+
+p{
+    font-size:1rem;
+}
+
+/* Images */
+img{
+    width:100%;
+    display:block;
+}
+
+/* Header */
+header{
+    background:#000;
+    color:#fff;
+    padding:1rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo img{
+    max-width:150px;
+}
+
+.navbar ul{
+    list-style:none;
+    display:flex;
+    gap:1rem;
+}
+
+.navbar a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+}
+
+/* Hero */
+.hero{
+    position:relative;
+    text-align:center;
+    color:#fff;
+}
+
+.hero img{
+    width:100%;
+    height:auto;
+}
+
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    max-width:500px;
+    animation:fadeIn 1.5s ease;
+}
+
+.hero::after,
+.menu-cta::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+}
+
+.hero img,
+.menu-cta img{
+position:relative;
+z-index:0;
+}
+
+.hero-content,
+.cta-content{
+position:absolute;
+z-index:1;
+}
+
+/* Buttons */
+.cta-btn{
+    display:inline-block;
+    margin-top:1rem;
+    padding:0.75rem 1.5rem;
+    background:#d69e3d;
+    color:#fff;
+    text-decoration:none;
+    font-family:'Karla', sans-serif;
+    transition:all 0.3s ease;
+}
+
+.cta-btn:hover,
+.cta-btn:focus{
+    background:#966f2c;
+}
+
+/* Introduction section */
+.intro{
+    max-width:1200px;
+    margin:auto;
+    padding:2rem 1rem;
+}
+
+.section-label{
+    color:#d69e3d;
+    text-transform:uppercase;
+    font-weight:600;
+    margin-bottom:0.5rem;
+}
+
+/* Image grid */
+.image-grid{
+    max-width:1200px;
+    margin:auto;
+    padding:1rem;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0.5rem;
+}
+
+/* Features section*/
+.features{
+    max-width:1200px;
+    margin:auto;
+    padding:2rem 1rem;
+    text-align:center;
+}
+
+.feature-lists{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    margin-top:2rem;
+}
+
+.feature img{
+    max-width:80px;
+    margin:0 auto 1rem auto;
+}
+
+/* CTA sections */
+.menu-cta{
+    position:relative;
+    text-align:center;
+    color:#fff;
+}
+
+.menu-cta img{
+    width:100%;
+}
+
+.cta-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.locations-cta{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:4rem 1rem;
+}
+
+/* About us section*/
+.about{
+    max-width:1200px;
+    margin:auto;
+    padding:2rem 1rem;
+}
+
+.about-content{
+    margin-top:1rem;
+}
+
+/* Testimonials section*/
+.testimonials{
+    background:#000;
+    color:#fff;
+    padding:2rem 1rem;
+}
+
+.testimonial-list{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    margin-top:2rem;
+}
+
+.testimonial img{
+    margin-bottom:1rem;
+	width:100%;
+	height:350px;
+	object-fit:cover;
+}
+
+blockquote{
+    font-style:italic;
+    margin-bottom:0.5rem;
+}
+
+/* Footer */
+footer{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:1rem;
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translate(-50%, -40%);
+    }
+    to{
+        opacity:1;
+        transform:translate(-50%, -50%);
+    }
+}
+
+/* Tablet */
+/* Base styling */
+@media (min-width:768px){
+	h1{
+	font-size:2.986rem;
+	}
+	h2{
+	font-size:2.488rem;
+	}
+	h3{
+	font-size:1.728rem;
+	}
+	p{
+	font-size:1rem;
+	}
+
+/* Wrapper spacing */
+header, .intro, .image-grid, .features, .about, .testimonials{
+	max-width:1200px;
+	margin:auto;
+}
+
+/* Navigation section */
+header{
+padding:1rem 2rem;
+}
+
+.navbar ul{
+gap:2rem;
+}
+
+/* Hero/Banner section */
+.hero{
+height:500px;
+}
+
+.hero img{
+height:100%;
+object-fit:cover;
+}
+
+.hero-content{
+max-width:650px;
+padding:1rem;
+}
+
+/* Introduction section */
+.intro{
+padding:4rem 2rem;
+}
+
+/* Image grid section */
+.image-grid{
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1rem;
+}
+
+.image-grid img:nth-child(1){
+grid-row:span 2;
+height:100%;
+object-fit:cover;
+}
+
+.image-grid img{
+height:100%;
+object-fit:cover;
+}
+
+/* Features section */
+.feature-lists{
+flex-direction:row;
+justify-content:space-between;
+text-align:center;
+gap:2rem;
+}
+
+.feature{
+flex:1;
+}
+
+/* CTA sections */
+.menu-cta{
+display:grid;
+grid-template-columns:1fr 1fr;
+}
+
+.menu-cta img{
+height:100%;
+object-fit:cover;
+}
+
+.locations-cta{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+padding:4rem 2rem;
+}
+
+.cta-content{
+position:static;
+transform:none;
+padding:2rem;
+}
+
+/* About section */
+.about{
+display:flex;
+gap:2rem;
+align-items:center;
+padding:4rem 2rem;
+}
+
+.about img{
+width:50%;
+object-fit:cover;
+}
+
+.about-content{
+width:50%;
+}
+
+/* Testimonials section*/
+.testimonial-list{
+flex-direction:row;
+gap:1.5rem;
+}
+
+.testimonial{
+flex:1;
+}
+
+.testimonial img{
+height:300px;
+object-fit:cover;
+}
+}
+
+/* Desktop */
+/* Base styling */
+@media (min-width:1100px){
+	h1{
+	font-size:3.815rem;
+	}
+	h2{
+	font-size:3.052rem;
+	}
+	h3{
+	font-size:1.953rem;
+	}
+	p{
+	font-size:1rem;
+	}
+
+/* Global layout spacing */
+header, .intro, .image-grid, .features, .about, .testimonials{
+max-width:1200px;
+margin:auto;
+}
+
+/* Navigation section*/
+header{
+padding:1.25rem 3rem;
+}
+
+.navbar ul{
+gap:2.5rem;
+}
+
+/* Hero/Banner section */
+.hero{
+height:650px;
+}
+
+.hero img{
+height:100%;
+object-fit:cover;
+}
+
+.hero-content{
+max-width:750px;
+}
+
+/* Introduction section */
+.intro{
+padding:5rem 2rem;
+}
+
+.intro img{
+margin-top:2rem;
+}
+
+/* Image grid section */
+.image-grid{
+grid-template-columns:2fr 1fr 1fr;
+grid-template-rows:1fr 1fr;
+gap:1.25rem;
+}
+
+/* Features section */
+.features{
+padding:5rem 2rem;
+}
+
+.feature-lists{
+gap:3rem;
+}
+
+.feature img{
+max-width:90px;
+}
+
+/* CTA section */
+.menu-cta{
+display:grid;
+grid-template-columns:1fr 1fr;
+height:420px;
+}
+
+.menu-cta img{
+height:100%;
+object-fit:cover;
+}
+
+/* Locations CTA */
+.locations-cta{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+padding:5rem 2rem;
+}
+
+/* About section */
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:3rem;
+padding:5rem 2rem;
+align-items:center;
+}
+
+.about img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* Testimonials section */
+.testimonial-list{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:2rem;
+}
+
+.testimonial img{
+height:350px;
+object-fit:cover;
+}
+
+/* Footer */
+footer{
+padding:2rem;
+}
+}
