@@ -66,23 +66,6 @@ padding:0.5rem;
 outline:3px solid #d69e3d;
 }
 
-/* Now the base styling for mobile */
-section{
-padding:3rem 1rem;
-}
-
-@media (min-width:768px){
-section{
-padding:4rem 2rem;
-}
-}
-
-@media (min-width:1100px){
-section{
-padding:5rem 2rem;
-}
-}
-
 /* Base styles */
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Lato:wght@400;700&display=swap');
 
@@ -90,20 +73,24 @@ body{
     font-family:'Karla', sans-serif;
     background:#f3f0e9;
     color:#000;
-    line-height:1.6;
 }
 
 /* Typography */
 h1,h2,h3,nav a{
     font-family:'Lato', sans-serif;
+    text-transform: uppercase;
 }
 
 h1{
     font-size:2.027rem;
+    font-weight: 900;
+    padding-bottom: 1rem;
+    line-height: 1.2;
 }
 
 h2{
     font-size:1.802rem;
+    font-weight: bold;
 }
 
 h3{
@@ -112,99 +99,88 @@ h3{
 
 p{
     font-size:1rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.cta-btn{
+    font-family:'Karla', sans-serif;
+    display:inline-block;
+    margin-top:1rem;
+    padding:1rem 2rem;
+    text-decoration:none;
+    transition:all 0.3s ease;
+    background-color: #fff;
+    color: #000;
+    font-weight: 900;
 }
 
 /* Images */
 img{
-    width:100%;
-    display:block;
+    width: 100%;
+    display: block;
 }
 
 /* Header */
 header{
-    background:#000;
-    color:#fff;
-    padding:1rem;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+    background: #000;
+    text-align: center;
 }
 
 .logo img{
-    max-width:150px;
+    width: 300px;
+    margin: 0 auto 1rem auto;
+    padding: 2rem;
 }
 
 .navbar ul{
-    list-style:none;
-    display:flex;
-    gap:1rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 2rem;
 }
 
 .navbar a{
-    color:#fff;
-    text-decoration:none;
-    font-weight:700;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
-/* Hero */
-.hero{
-    position:relative;
-    text-align:center;
-    color:#fff;
+.navbar a:hover{
+    color: #d69e3d;
 }
 
-.hero img{
-    width:100%;
-    height:auto;
+/* Hero/Banner section */
+.hero {
+  position: relative;
+  width: 100%;
 }
 
-.hero-content{
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  animation:fadeIn 1.5s ease;
+}
+
+.hero-content p{
+    padding-bottom: 2rem;
+}
+
+/* Dark overlay */
+.hero-image-container::before{
+    content:"";
     position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    max-width:500px;
-    animation:fadeIn 1.5s ease;
-}
-
-.hero::after,
-.menu-cta::after{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.55);
-}
-
-.hero img,
-.menu-cta img{
-position:relative;
-z-index:0;
-}
-
-.hero-content,
-.cta-content{
-position:absolute;
-z-index:1;
-}
-
-/* Buttons */
-.cta-btn{
-    display:inline-block;
-    margin-top:1rem;
-    padding:0.75rem 1.5rem;
-    background:#d69e3d;
-    color:#fff;
-    text-decoration:none;
-    font-family:'Karla', sans-serif;
-    transition:all 0.3s ease;
-}
-
-.cta-btn:hover,
-.cta-btn:focus{
-    background:#966f2c;
+    top: 0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background:rgba(0,0,0,0.55);
 }
 
 /* Introduction section */
@@ -252,29 +228,6 @@ z-index:1;
 }
 
 /* CTA sections */
-.menu-cta{
-    position:relative;
-    text-align:center;
-    color:#fff;
-}
-
-.menu-cta img{
-    width:100%;
-}
-
-.cta-content{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-}
-
-.locations-cta{
-    background:#000;
-    color:#fff;
-    text-align:center;
-    padding:4rem 1rem;
-}
 
 /* About us section*/
 .about{
@@ -487,6 +440,10 @@ object-fit:cover;
 	p{
 	font-size:1rem;
 	}
+
+section{
+padding:5rem 2rem;
+}
 
 /* Global layout spacing */
 header, .intro, .image-grid, .features, .about, .testimonials{
