@@ -172,6 +172,12 @@ header{
     padding-bottom: 2rem;
 }
 
+.hero-content .cta-btn:hover{
+    color: #fff;
+    background-color: #966f2c;
+    outline: 3px solid #fff;
+}
+
 /* Dark overlay */
 .hero-image-container::before{
     content:"";
