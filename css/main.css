@@ -95,14 +95,16 @@ h2{
 
 h3{
     font-size:1.424rem;
+    font-weight: bold;
+    padding: 1rem;
 }
 
 p{
     font-size:1rem;
     line-height: 1.5;
-    font-weight: 500;
 }
 
+/* Making this the default style for buttons */
 .cta-btn{
     font-family:'Karla', sans-serif;
     display:inline-block;
@@ -113,15 +115,24 @@ p{
     background-color: #fff;
     color: #000;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
-/* Images */
+/* Making this the default style for the paragraph on top of all the h2s*/
+.section-label{
+    color:#d69e3d;
+    text-transform:uppercase;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Making this the default style for all images */
 img{
     width: 100%;
     display: block;
 }
 
-/* Header */
+/* Header/Navigation section*/
 header{
     background: #000;
     text-align: center;
@@ -178,8 +189,8 @@ header{
     outline: 3px solid #fff;
 }
 
-/* Dark overlay */
-.hero-image-container::before{
+/* Dark overlay on the Hero/Banner section*/
+.image-container::before{
     content:"";
     position:absolute;
     top: 0;
@@ -191,60 +202,127 @@ header{
 
 /* Introduction section */
 .intro{
-    max-width:1200px;
-    margin:auto;
-    padding:2rem 1rem;
+    padding:1rem 1rem;
 }
 
-.section-label{
-    color:#d69e3d;
-    text-transform:uppercase;
-    font-weight:600;
-    margin-bottom:0.5rem;
+.intro h2{
+    padding-bottom: 3rem;
+    padding-right: 18rem;
 }
 
-/* Image grid */
+.intro p{
+    padding-top: 5rem;
+}
+
+/* Image grid in the introducation section*/
 .image-grid{
     max-width:1200px;
-    margin:auto;
     padding:1rem;
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:0.5rem;
+    gap:2rem;
 }
 
-/* Features section*/
+/* Features/Visit us section*/
 .features{
     max-width:1200px;
-    margin:auto;
-    padding:2rem 1rem;
+    padding: 3rem 1rem;
     text-align:center;
 }
 
 .feature-lists{
     display:flex;
     flex-direction:column;
-    gap:2rem;
-    margin-top:2rem;
+    gap:4rem;
+    margin-top:3rem;
 }
 
 .feature img{
-    max-width:80px;
-    margin:0 auto 1rem auto;
+    max-width:30%;
+    margin:0 auto 2rem auto;
 }
 
-/* CTA sections */
+.feature p{
+    padding: 0 6rem;
+    padding-bottom: 4rem;
+}
+
+/* Menu and Location CTA section */
+/* Starting with the dark overlay on the image of this section*/
+.cta-image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.cta-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Aligning the text on the image*/
+.menu-location-cta-container{
+  position: relative;
+  padding-bottom: 10%;
+}
+
+.cta-content-menu {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.cta-content-location {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* Styling the text in this section*/
+.menu-location-cta-container h2{
+    padding-bottom: 15%;
+}
+
+/* Styling the buttons */
+.cta-content-menu .cta-btn:hover{
+    color: #fff;
+    background-color: #966f2c;
+    outline: 3px solid #fff;
+}
+
+.cta-content-location .cta-btn{
+    color: #fff;
+    background-color: transparent;
+    outline: 3px solid #fff;
+}
+
+.cta-content-location .cta-btn:hover{
+    color: #000;
+    background-color: #ffff;
+    outline: none;
+}
 
 /* About us section*/
 .about{
-    max-width:1200px;
     margin:auto;
     padding:2rem 1rem;
 }
 
 .about-content{
-    margin-top:1rem;
+    margin-top:2rem;
 }
+
 
 /* Testimonials section*/
 .testimonials{

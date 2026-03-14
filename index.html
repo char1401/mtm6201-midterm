@@ -26,7 +26,7 @@
     <main id="main-content">
     <!-- Hero/Banner -->
      <section class="hero">
-        <div class="hero-image-container">
+        <div class="image-container">
         <!-- using the picture element to specify different images -->
         <picture>
             <source
@@ -38,9 +38,9 @@
         </picture>
         </div>
         <div class="hero-content">
-            <h1>EXPERIENCE COFFEE LIKE NEVER BEFORE</h1>
+            <h1>Experience coffee like never before</h1>
             <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
-            <a href="#menu" class="cta-btn">EXPLORE OUR MENU</a>
+            <a href="#menu" class="cta-btn">Explore our menu</a>
         </div>
      </section>
     <!-- Introduction section -->
@@ -78,19 +78,26 @@
             </article>
         </div>
      </section>
-    <!-- Menu CTA -->
-    <img src="./images/coffee-shop.jpeg" alt="Interior of a coffee shop frontdesk area">
-     <section id="menu" class="menu-cta">
-        <div class="cta-content">
-            <p>Our Menu</p>
-            <h2>Explore what we have to offer you</h2>
-            <a href="#menu" class="cta-btn">Explore Our Menu</a>
-        </div>
-     </section>
+    <!-- Menu and Location CTA -->
+    <!-- using the picture element to specify different images -->
+     <section class="menu-location-cta-container">
+     <div class="cta-image-container">
+        <picture>
+            <source
+            srcset="./images/coffee-shop-500x600.jpeg 1x,
+            "
+            media="(max-width: 767px)"/>
+            <img src="./images/coffee-shop.jpeg" alt="Interior of a coffee shop frontdesk area">
+        </picture>
+     </div>
+    <div class="cta-content-menu">
+        <p class="section-label">Our Menu</p>
+        <h2>Explore what we have to offer you</h2>
+        <a href="#menu" class="cta-btn">Explore Our Menu</a>
+    </div>
     <!-- Location CTA -->
-     <section id="locations" class="locations-cta">
-        <div class="cta-content">
-            <p>Locations</p>
+        <div class="cta-content-location">
+            <p class="section-label">Locations</p>
             <h2>Find your nearest coffee shop</h2>
             <a href="#locations" class="cta-btn">View Locations</a>
         </div>
