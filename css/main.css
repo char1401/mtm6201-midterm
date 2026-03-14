@@ -320,9 +320,27 @@ header{
 }
 
 .about-content{
-    margin-top:2rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
 }
 
+.about h2{
+    padding-bottom: 1rem;
+}
+
+.about p{
+    margin-bottom: 1rem;
+}
+
+/* Styling the button */
+.about .cta-btn{
+    color: #fff;
+    background-color: #000;
+}
+
+.about .cta-btn:hover{
+    background-color: #966f2c;
+}
 
 /* Testimonials section*/
 .testimonials{
