@@ -31,7 +31,7 @@
         <picture>
             <source
             srcset="
-            ./images/hero-background-767x625.jpg 1x,
+            ./images/hero-background-mobile.jpg 1x,
             "
             media="(max-width: 767px)"/>
             <img class="hero-background" src="./images/hero-background.jpg" alt="Coffee being prepared behind a café counter">
@@ -84,7 +84,7 @@
      <div class="cta-image-container">
         <picture>
             <source
-            srcset="./images/coffee-shop-500x600.jpeg 1x,
+            srcset="./images/coffee-shop-mobile.jpeg 1x,
             "
             media="(max-width: 767px)"/>
             <img src="./images/coffee-shop.jpeg" alt="Interior of a coffee shop frontdesk area">
@@ -122,25 +122,56 @@
         </div>
         <div class="testimonial-list">
             <article class="testimonial">
-                <img src="./images/testimonial-1.jpeg" alt="Customer enjoying coffee">
+            <div class="testimonials-image-container">
+                <picture>
+                    <source
+                    srcset="./images/testimonial-1-mobile.jpeg 1x,
+                    "
+                    media="(max-width: 767px)"/>
+                    <img src="./images/testimonial-1.jpeg" alt="Customer enjoying coffee">
+                </picture>
+            </div>
+            <div class="testimonial-content">
                 <blockquote>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</blockquote>
                 <p class="customer">Jane D., Toronto</p>
+            </div>
             </article>
             <article class="testimonial">
-                <img src="./images/testimonial-2.jpeg" alt="Happy customer holding a cup of coffee">
-                <blockquote>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</blockquote>
-                <p class="customer">Scott S., Ottawa</p>
+            <div class="testimonials-image-container">
+                <picture>
+                    <source
+                    srcset="./images/testimonial-2-mobile.jpeg 1x,
+                    "
+                    media="(max-width: 767px)"/>
+                    <img src="./images/testimonial-2.jpeg" alt="Happy customer holding a cup of coffee">
+                </picture>
+                </div>
+                <div class="testimonial-content">
+                    <blockquote>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</blockquote>
+                    <p class="customer">Scott S., Ottawa</p>
+                </div>
             </article>
             <article class="testimonial">
-                <img src="./images/testimonial-3.jpeg" alt="Customer smiling with a coffee">
-                <blockquote>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</blockquote>
-                <p class="customer">Susie F., Ottawa </p>
+                <div class="testimonials-image-container">
+                <picture>
+                    <source
+                    srcset="./images/testimonial-3-mobile.jpeg 1x,
+                    "
+                    media="(max-width: 767px)"/>
+                    <img src="./images/testimonial-3.jpeg" alt="Customer smiling with a coffee">
+                </picture>
+                </div>
+                <div class="testimonial-content">
+                    <blockquote>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</blockquote>
+                    <p class="customer">Susie F., Ottawa </p>
+                </div>
             </article>
         </div>
      </section>
     </main>
     <!-- Footer -->
     <footer>
+        <div class="footer-line"></div>
         <p>&copy; My Coffee Company 2024</p>
     </footer>
 </body>
