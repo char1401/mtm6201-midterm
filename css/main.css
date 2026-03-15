@@ -67,8 +67,6 @@ outline:3px solid #d69e3d;
 }
 
 /* Base styles */
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Lato:wght@400;700&display=swap');
-
 body{
     font-family:'Karla', sans-serif;
     background:#f3f0e9;
