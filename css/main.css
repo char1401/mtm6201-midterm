@@ -236,17 +236,20 @@ header{
     display:flex;
     flex-direction:column;
     gap:4rem;
-    margin-top:3rem;
+    /* margin-top:3rem; */
+    margin:3rem auto 0;
 }
 
 .feature img{
-    max-width:30%;
-    margin:0 auto 2rem auto;
+    width:25%;
+    height:auto;
+    margin-bottom:1.5rem;
 }
 
 .feature p{
-    padding: 0 6rem;
-    padding-bottom: 4rem;
+    max-width:320px;
+    margin:0 auto;
+    line-height:1.5;
 }
 
 /* Menu and Location CTA section */
@@ -450,6 +453,7 @@ footer{
 .image-grid{
     margin:0 auto;
     padding:1rem;
+    padding-bottom: 3rem;
 
     display:grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -471,7 +475,70 @@ footer{
     display:block;
 }
 
+/* Features section */
+.feature-lists{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:3rem;
+}
 
+.feature img{
+    width: 50%;
+}
+
+/* Center the third feature */
+.feature:last-child{
+    grid-column:span 2;
+    max-width:400px;
+    margin:0 auto;
+    padding-bottom: 5rem;
+}
+
+/* The Menu and Location CTA section */
+.cta-image-container{
+  position:relative;
+  width:100%;
+}
+
+/* Menu CTA (left side) */
+.cta-content-menu{
+  top:45%;
+  left:25%;
+  transform:translate(-50%, -50%);
+  text-align:center;
+  padding-bottom: 2rem;
+}
+
+/* Location CTA (right side) */
+.cta-content-location{
+  top:45%;
+  left:75%;
+  transform:translate(-50%, -50%);
+  text-align:center;
+  padding-bottom: 2rem;
+}
+
+/* Improves the cta spacings */
+.menu-location-cta-container h2{
+  padding-bottom: 4rem;
+}
+
+.cta-content-menu,
+.cta-content-location{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  max-width:350px;
+}
+
+/* Trying to keep it so the menue button isnt longer then the location button, idk why it is by default */
+.cta-content-menu .cta-btn,
+.cta-content-location .cta-btn{
+  margin-top: auto;
+  align-self: center;
+}
+
+/* Abous us section */
 
 }
 
