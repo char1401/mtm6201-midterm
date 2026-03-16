@@ -280,12 +280,12 @@ header{
 /* Aligning the text on the image*/
 .menu-location-cta-container{
   position: relative;
-  padding-bottom: 10%;
+  padding-bottom: auto;
 }
 
 .cta-content-menu {
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -294,7 +294,7 @@ header{
 
 .cta-content-location {
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -303,7 +303,7 @@ header{
 
 /* Styling the text in this section*/
 .menu-location-cta-container h2{
-    padding-bottom: 15%;
+    padding-bottom: 2rem;
 }
 
 /* Styling the buttons */
@@ -328,13 +328,11 @@ header{
 /* About us section*/
 /* Mostly spacing styling */
 .about{
-    margin:auto;
-    padding:2rem 1rem;
+    padding: 6rem 1rem;
 }
 
 .about-content{
     margin-top: 1rem;
-    margin-bottom: 4rem;
 }
 
 .about h2{
@@ -528,7 +526,7 @@ footer{
   display:flex;
   flex-direction:column;
   text-align:center;
-  max-width:350px;
+  max-width:450px;
 }
 
 /* Trying to keep it so the menue button isnt longer then the location button, idk why it is by default */
@@ -539,6 +537,24 @@ footer{
 }
 
 /* Abous us section */
+.about{
+  display:flex;
+  align-items:center;
+  gap:2rem;
+  padding: 6rem 1rem;
+}
+
+/* Image side */
+.about img{
+  width:50%;
+  height:auto;
+  display:block;
+}
+
+/* Text side */
+.about-content{
+  width:50%;
+}
 
 }
 
