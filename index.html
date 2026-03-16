@@ -39,11 +39,14 @@
         <!-- using the picture element to specify different images -->
         <picture>
             <source
-            srcset="
-            ./images/hero-background-mobile.jpg 1x,
-            "
-            media="(max-width: 767px)"/>
-            <img class="hero-background" src="./images/hero-background.jpg" alt="Coffee being prepared behind a café counter">
+            srcset="./images/hero-background-desktop.jpg"
+            media="(min-width: 1100px)"/>
+
+            <source
+            srcset="./images/hero-background-tablet.jpg"
+            media="(min-width: 768px)"/>
+
+            <img class="hero-background" src="./images/hero-background-mobile.jpg" alt="Coffee being prepared behind a café counter">
         </picture>
         </div>
         <div class="hero-content">
@@ -93,10 +96,14 @@
      <div class="cta-image-container">
         <picture>
             <source
-            srcset="./images/coffee-shop-mobile.jpeg 1x,
-            "
-            media="(max-width: 767px)"/>
-            <img src="./images/coffee-shop.jpeg" alt="Interior of a coffee shop frontdesk area">
+            srcset="./images/coffee-shop-desktop.jpeg"
+            media="(min-width: 1100px)"/>
+
+            <source
+            srcset="./images/coffee-shop-tablet.jpeg"
+            media="(min-width: 768px)"/>
+
+            <img src="./images/coffee-shop-mobile.jpeg" alt="Interior of a coffee shop frontdesk area">
         </picture>
      </div>
     <div class="cta-content-menu">
@@ -133,11 +140,15 @@
             <article class="testimonial">
             <div class="testimonials-image-container">
                 <picture>
-                    <source
-                    srcset="./images/testimonial-1-mobile.jpeg 1x,
-                    "
-                    media="(max-width: 767px)"/>
-                    <img src="./images/testimonial-1.jpeg" alt="Customer enjoying coffee">
+                    <source 
+                        srcset="./images/testimonial-1-desktop.jpeg"
+                        media="(min-width: 1100px)">
+
+                    <source 
+                        srcset="./images/testimonial-1-tablet.jpeg"
+                        media="(min-width: 768px)">
+
+                    <img src="./images/testimonial-1-mobile.jpeg" alt="Customer enjoying coffee">
                 </picture>
             </div>
             <div class="testimonial-content">
@@ -148,11 +159,15 @@
             <article class="testimonial">
             <div class="testimonials-image-container">
                 <picture>
-                    <source
-                    srcset="./images/testimonial-2-mobile.jpeg 1x,
-                    "
-                    media="(max-width: 767px)"/>
-                    <img src="./images/testimonial-2.jpeg" alt="Happy customer holding a cup of coffee">
+                    <source 
+                        srcset="./images/testimonial-3-desktop.jpeg"
+                        media="(min-width: 1100px)">
+
+                    <source 
+                        srcset="./images/testimonial-2-tablet.jpeg"
+                        media="(min-width: 768px)">
+                    
+                    <img src="./images/testimonial-2-mobile.jpeg" alt="Happy customer holding a cup of coffee">
                 </picture>
                 </div>
                 <div class="testimonial-content">
@@ -163,11 +178,15 @@
             <article class="testimonial">
                 <div class="testimonials-image-container">
                 <picture>
-                    <source
-                    srcset="./images/testimonial-3-mobile.jpeg 1x,
-                    "
-                    media="(max-width: 767px)"/>
-                    <img src="./images/testimonial-3.jpeg" alt="Customer smiling with a coffee">
+                    <source 
+                        srcset="./images/testimonial-3-desktop.jpeg"
+                        media="(min-width: 1100px)">
+
+                    <source 
+                        srcset="./images/testimonial-3-tablet.jpeg"
+                        media="(min-width: 768px)">
+
+                    <img src="./images/testimonial-3-mobile.jpeg" alt="Customer smiling with a coffee">
                 </picture>
                 </div>
                 <div class="testimonial-content">
@@ -181,6 +200,6 @@
     <!-- Footer -->
         <footer>
             <p>&copy; My Coffee Company 2024</p>
-    </section>
+        </footer>
 </body>
 </html>

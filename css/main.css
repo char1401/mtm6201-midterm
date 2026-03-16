@@ -73,6 +73,8 @@ body{
     color:#000;
 }
 
+
+
 /* Typography */
 h1,h2,h3,nav a{
     font-family:'Lato', sans-serif;
@@ -126,8 +128,8 @@ p{
 
 /* Making this the default style for all images */
 img{
-    width: 100%;
-    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Header/Navigation section*/
@@ -205,7 +207,6 @@ header{
 
 .intro h2{
     padding-bottom: 3rem;
-    padding-right: 18rem;
 }
 
 .intro p{
@@ -223,7 +224,6 @@ header{
 
 /* Features/Visit us section*/
 .features{
-    max-width:1200px;
     padding: 3rem 1rem;
     text-align:center;
 }
@@ -247,9 +247,16 @@ header{
 
 /* Menu and Location CTA section */
 /* Starting with the dark overlay on the image of this section*/
+/* I had to force the image to always fill the container width. */
+.cta-image-container img{
+    max-width:100%;
+    width:100%;
+    height:auto;
+    display:block;
+}
+/* The container is 100% width, but the image inside wasn't forced to stretch, so it stayed at its natural size. */
 .cta-image-container {
   position: relative;
-  display: inline-block;
   width: 100%;
 }
 
@@ -419,8 +426,8 @@ footer{
     }
 }
 
-/* Tablet */
-/* Base styling */
+/* Tablet version starts here */
+/* Base styling (the change infont-sizing)*/
 @media (min-width:768px){
 	h1{
 	font-size:2.986rem;
@@ -434,128 +441,6 @@ footer{
 	p{
 	font-size:1rem;
 	}
-
-/* Wrapper spacing */
-header, .intro, .image-grid, .features, .about, .testimonials{
-	max-width:1200px;
-	margin:auto;
-}
-
-/* Navigation section */
-header{
-padding:1rem 2rem;
-}
-
-.navbar ul{
-gap:2rem;
-}
-
-/* Hero/Banner section */
-.hero{
-height:500px;
-}
-
-.hero img{
-height:100%;
-object-fit:cover;
-}
-
-.hero-content{
-max-width:650px;
-padding:1rem;
-}
-
-/* Introduction section */
-.intro{
-padding:4rem 2rem;
-}
-
-/* Image grid section */
-.image-grid{
-display:grid;
-grid-template-columns:2fr 1fr 1fr;
-grid-template-rows:1fr 1fr;
-gap:1rem;
-}
-
-.image-grid img:nth-child(1){
-grid-row:span 2;
-height:100%;
-object-fit:cover;
-}
-
-.image-grid img{
-height:100%;
-object-fit:cover;
-}
-
-/* Features section */
-.feature-lists{
-flex-direction:row;
-justify-content:space-between;
-text-align:center;
-gap:2rem;
-}
-
-.feature{
-flex:1;
-}
-
-/* CTA sections */
-.menu-cta{
-display:grid;
-grid-template-columns:1fr 1fr;
-}
-
-.menu-cta img{
-height:100%;
-object-fit:cover;
-}
-
-.locations-cta{
-display:grid;
-grid-template-columns:1fr 1fr;
-align-items:center;
-padding:4rem 2rem;
-}
-
-.cta-content{
-position:static;
-transform:none;
-padding:2rem;
-}
-
-/* About section */
-.about{
-display:flex;
-gap:2rem;
-align-items:center;
-padding:4rem 2rem;
-}
-
-.about img{
-width:50%;
-object-fit:cover;
-}
-
-.about-content{
-width:50%;
-}
-
-/* Testimonials section*/
-.testimonial-list{
-flex-direction:row;
-gap:1.5rem;
-}
-
-.testimonial{
-flex:1;
-}
-
-.testimonial img{
-height:300px;
-object-fit:cover;
-}
 }
 
 /* Desktop */
@@ -573,118 +458,4 @@ object-fit:cover;
 	p{
 	font-size:1rem;
 	}
-
-section{
-padding:5rem 2rem;
-}
-
-/* Global layout spacing */
-header, .intro, .image-grid, .features, .about, .testimonials{
-max-width:1200px;
-margin:auto;
-}
-
-/* Navigation section*/
-header{
-padding:1.25rem 3rem;
-}
-
-.navbar ul{
-gap:2.5rem;
-}
-
-/* Hero/Banner section */
-.hero{
-height:650px;
-}
-
-.hero img{
-height:100%;
-object-fit:cover;
-}
-
-.hero-content{
-max-width:750px;
-}
-
-/* Introduction section */
-.intro{
-padding:5rem 2rem;
-}
-
-.intro img{
-margin-top:2rem;
-}
-
-/* Image grid section */
-.image-grid{
-grid-template-columns:2fr 1fr 1fr;
-grid-template-rows:1fr 1fr;
-gap:1.25rem;
-}
-
-/* Features section */
-.features{
-padding:5rem 2rem;
-}
-
-.feature-lists{
-gap:3rem;
-}
-
-.feature img{
-max-width:90px;
-}
-
-/* CTA section */
-.menu-cta{
-display:grid;
-grid-template-columns:1fr 1fr;
-height:420px;
-}
-
-.menu-cta img{
-height:100%;
-object-fit:cover;
-}
-
-/* Locations CTA */
-.locations-cta{
-display:grid;
-grid-template-columns:1fr 1fr;
-align-items:center;
-padding:5rem 2rem;
-}
-
-/* About section */
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:3rem;
-padding:5rem 2rem;
-align-items:center;
-}
-
-.about img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
-
-/* Testimonials section */
-.testimonial-list{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:2rem;
-}
-
-.testimonial img{
-height:350px;
-object-fit:cover;
-}
-
-/* Footer */
-footer{
-padding:2rem;
-}
 }
