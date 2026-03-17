@@ -597,4 +597,24 @@ footer{
 	p{
 	font-size:1rem;
 	}
+
+/* Navigation section */
+header {
+    display: flex;
+    align-items: center;
+    gap: 35%;
+    height: 4rem;
+}
+
+.logo img {
+    height: 20px;
+    padding-top: 15%;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
 }
