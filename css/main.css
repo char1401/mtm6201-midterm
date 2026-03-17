@@ -657,4 +657,39 @@ header {
     align-items: center;
 }
 
+/* Menue and location section*/
+/* Trying to space them to match the mockup but failing miserably instead */
+.cta-grid h2{
+    padding: 0;
+    padding-bottom: 1rem;
+    word-wrap: break-word;
+    gap: 8rem;
+}
+
+.cta-grid .section-label{
+    margin: 0;
+}
+
+.cta-content-menu, 
+.cta-content-location{
+    max-width: 350px;
+    margin: 1rem 0;
+    padding: 0;
+
+}
+
+/* About us section */
+.about{
+    margin: 0 10%;
+}
+
+/* Testimonial section */
+.testimonials h2, 
+.section-label{
+    margin: 0 10%;
+}
+
+.testimonial-list{
+    margin: 0 10%;
+}
 }
