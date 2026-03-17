@@ -236,7 +236,6 @@ header{
     display:flex;
     flex-direction:column;
     gap:4rem;
-    /* margin-top:3rem; */
     margin:3rem auto 0;
 }
 
@@ -615,6 +614,47 @@ header {
     display: flex;
     margin: 0;
     padding: 0;
+}
+
+/* Hero/Banner section */
+/* Nothing here, it looks good enough */
+
+/* Introduction section starts here */
+.intro{
+    margin: 0 10%;
+}
+
+.image-grid{
+    margin: 0 10%;
+}
+
+/* Features section */
+.feature-lists{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem;
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.feature img {
+    width: 120px;
+    margin: 0 auto 1rem;
+    padding-top: 2rem;
+}
+
+.feature:last-child {
+    /* remove the spanning */
+    grid-column: auto;
+    max-width: none;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 }
