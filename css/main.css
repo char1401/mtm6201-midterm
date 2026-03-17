@@ -453,7 +453,7 @@ footer{
 	font-size:1rem;
 	}
 
-/* Moving to Hero/Banner section */
+/* Moving to Introduction section */
 .image-grid{
     margin:0 auto;
     padding:1rem;
@@ -629,10 +629,21 @@ header {
 /* Introduction section starts here */
 .intro{
     margin: 0 10%;
+    padding: 0%;
+}
+
+.intro p{
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.intro h2{
+    padding-bottom: 2rem;
 }
 
 .image-grid{
-    margin: 0 10%;
+    padding: 0%;
+    margin: 0 10%; 
 }
 
 /* Features section */
