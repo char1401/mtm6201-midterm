@@ -418,6 +418,13 @@ footer{
   padding-bottom: 5rem;
 }
 
+.footer-bar {
+    height: 2px;
+    background-color: #ccc;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
 /* Animation */
 @keyframes fadeIn{
     from{
@@ -691,5 +698,11 @@ header {
 
 .testimonial-list{
     margin: 0 10%;
+}
+
+/* Footer bar */
+.footer-bar {
+    width: 80%; 
+    margin: 0 auto;
 }
 }
